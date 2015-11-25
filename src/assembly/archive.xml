@@ -11,45 +11,32 @@
 	<formats>
 		<format>tar.gz</format>
 	</formats>
-  
-  <dependencySets>
-    <dependencySet>
-      <unpack>false</unpack>
-      <scope>runtime</scope>
-      <outputDirectory>./lib</outputDirectory>
-    </dependencySet>
-  </dependencySets>
- 
+	
  <fileSets>
-
 	<fileSet>
-      <directory>target</directory>
+	  <directory>target</directory>
       <outputDirectory>./lib</outputDirectory>
       <includes>
         <include>*.jar</include>
       </includes>
     </fileSet>
   </fileSets>
-  
+
   <files>
       <file>
-          <source>src/main/scripts/gestionInstances.bat</source>
+          <source>src/main/scripts/launch.sh</source>
           <filtered>true</filtered>
-          <outputDirectory>.</outputDirectory>
+          <outputDirectory>./bin</outputDirectory>
       </file>
-      <file>
-          <source>src/main/scripts/gestionInstances.sh</source>
+	  <file>
+          <source>src/main/assembly/configuration.properties</source>
           <filtered>true</filtered>
-          <outputDirectory>.</outputDirectory>
-          <lineEnding>unix</lineEnding>
-          <fileMode>711</fileMode>
+          <outputDirectory>./conf</outputDirectory>
       </file>
-      <file>
-          <source>src/main/assembly/log4j.properties</source>
+	  <file>
+          <source>src/main/assembly/logo.png</source>
           <filtered>true</filtered>
-          <outputDirectory>./lib</outputDirectory>
-          <lineEnding>unix</lineEnding>
-          <fileMode>711</fileMode>
+          <outputDirectory>./ext/resources</outputDirectory>
       </file>
   </files>
   
