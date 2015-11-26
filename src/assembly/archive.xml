@@ -6,7 +6,7 @@
 
 -->
 <assembly>
-	<id>archive</id>
+	<id>dist</id>
 	<includeBaseDirectory>true</includeBaseDirectory>
 	<formats>
 		<format>tar.gz</format>
