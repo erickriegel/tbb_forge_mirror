@@ -4,7 +4,7 @@
  
   <groupId>fr.asipsante.tra.forge</groupId>
   <artifactId>testforge</artifactId>
-  <version>1.0.0.4-SNAPSHOT</version>
+  <version>1.0.0.4-RELEASE</version>
   <packaging>jar</packaging>
 
   <name>testforge</name>
