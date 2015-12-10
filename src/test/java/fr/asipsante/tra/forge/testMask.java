@@ -1,9 +1,9 @@
-public class Traces implements Serializable
+public class Traces
 {
-protected String xmlPath ;
+protected int xmlPath ;
 
-public setXmlPath(String xmlPath)
-{
-	this.xmlPath = xmlPath ;
-}
+	public void setXmlPath(int xmlPath)
+	{
+		xmlPath.toString() ;
+	}
 }
