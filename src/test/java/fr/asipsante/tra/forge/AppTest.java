@@ -33,6 +33,7 @@ public class AppTest
      */
     public void testApp()
     {
+		System.out.println("JAVA_HOME : " + System.getProperty("java.home"));
         assertTrue( true );
     }
 }
