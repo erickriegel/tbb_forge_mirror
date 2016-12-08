@@ -26,13 +26,11 @@
 			<artifactId>commons-beanutils-core</artifactId>
 			<version>1.8.3</version>
 		</dependency>
-		
 	</dependencies>
 
 <profiles>
 
 <!-- profile pour la distribution (le packaging) de l'application (assembly) -->
-
 	<profile>
 		<id>distribution</id>
 	<build>
@@ -49,7 +47,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/classes/lib</outputDirectory>
+							<outputDirectory>${project.build.directory}/lib</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -65,9 +63,11 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
 							<mainClass>fr.asipsante.tra.forge.App</mainClass>
 						</manifest>
+						<manifestEntries>
+							<Class-Path>lib/</Class-Path>
+						</manifestEntries>
 					</archive>
 				</configuration>
 			</plugin>
@@ -110,6 +110,15 @@
 				<configuration>
 					<!-- fichier descripteur pour l'assembly du projet -->	
 					<descriptor>src/assembly/archive.xml</descriptor>
+                <appendAssemblyId>false</appendAssemblyId>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>fr.asipsante.tra.forge.App</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
