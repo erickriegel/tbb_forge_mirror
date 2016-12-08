@@ -20,6 +20,13 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Dépendance ajoutée pour vérification de la détection de la faille CVE-2014-0114 -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		
 	</dependencies>
 
 <profiles>
