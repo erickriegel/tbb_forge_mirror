@@ -27,15 +27,23 @@
 			<version>1.8.3</version>
 		</dependency>
 	</dependencies>
-
+	<build>
+	  <pluginManagement>
+		<plugins>
+		  <plugin>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.0.2</version>
+		  </plugin>
+		</plugins>
+	  </pluginManagement>
+	</build>
 <profiles>
-
 <!-- profile pour la distribution (le packaging) de l'application (assembly) -->
 	<profile>
 		<id>distribution</id>
 	<build>
 		<plugins>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -55,7 +63,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -71,7 +78,6 @@
 					</archive>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -80,7 +86,6 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
