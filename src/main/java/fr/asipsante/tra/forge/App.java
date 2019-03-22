@@ -14,11 +14,10 @@ import org.apache.commons.beanutils.converters.DateConverter;
     {
         System.out.println( "Hello World! "  + new DateConverter().toString());
 		test1 = true;
-		
-		doSomething(){
-			System.out.println("Coucou");
-		};
-		
 		if (test1) doSomething();
     }
+	
+	public doSomething(){
+		System.out.println("Coucou");
+	};
 }
