@@ -8,7 +8,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
  
  public class App 
 {
-	String test1 test2;
+	String test1, test2;
 	
     public static void main( String[] args )
     {
@@ -17,7 +17,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
 		
 		doSomething(){
 			System.out.println("Coucou");
-		}
+		};
 		
 		if (test1) doSomething();
     }
