@@ -6,6 +6,8 @@ package fr.asipsante.tra.forge;
  */
 import org.apache.commons.beanutils.converters.DateConverter;
  
+ public class App 
+{
 	public static boolean test1, test2;
 	public String mot1, mot2;
 	
