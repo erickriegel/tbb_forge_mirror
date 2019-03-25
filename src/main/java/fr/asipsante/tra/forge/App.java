@@ -9,7 +9,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
  public class App 
 {
 	public static boolean test1, test2;
-	public String mot1, mot2;
+	public String mot1 = "test", mot2 = "retest";
 	public int chiffre1;
 	public int chiffre2;
 	
@@ -26,8 +26,6 @@ import org.apache.commons.beanutils.converters.DateConverter;
 	};
 	
 	public String doSomething2(){
-		mot1 = "test";
-		mot2 = "retest";
 		try {
 		}
 		catch (Exception e){
