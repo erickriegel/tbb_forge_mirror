@@ -26,6 +26,10 @@ import org.apache.commons.beanutils.converters.DateConverter;
 	public String doSomething2(){
 		mot1 = "test";
 		mot2 = "retest";
+		try {
+		}
+		catch (Exception e){
+		}
 		return (mot1);
 	};
 }
