@@ -10,6 +10,8 @@ import org.apache.commons.beanutils.converters.DateConverter;
 {
 	public static boolean test1, test2;
 	public String mot1, mot2;
+	public int chiffre1;
+	public int chiffre2;
 	
     public static void main( String[] args )
     {
