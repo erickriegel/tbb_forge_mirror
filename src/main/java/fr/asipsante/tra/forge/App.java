@@ -10,6 +10,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
  public class App 
 {
 	public static boolean test1, test2;
+	private String PASSWORD = "password";
 	
     public static void main( String[] args )
     {
