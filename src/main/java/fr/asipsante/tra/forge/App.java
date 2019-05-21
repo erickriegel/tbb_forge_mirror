@@ -11,6 +11,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
 {
 	public static boolean test1, test2;
 	public String variablePublique = "publique";
+	public String myvar = "test";
 	private String PASSWORD = "password";
 	
     public static void main( String[] args )
