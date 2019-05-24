@@ -13,6 +13,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
 	public String variablePublique = "publique";
 	public String myvar = "test";
 	private String PASSWORD = "password";
+	private String PASSWORD2 = "password";
 	
     public static void main( String[] args )
     {
