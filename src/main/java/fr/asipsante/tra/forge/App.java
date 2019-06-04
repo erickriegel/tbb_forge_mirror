@@ -20,7 +20,10 @@ import org.apache.commons.beanutils.converters.DateConverter;
     	System.out.println( "Hello World! "  + new DateConverter().toString());
 		test1 = true;
 		test2 = false;
-		if (test1) doSomething();
+		if (test1) {
+		   doSomething();
+		   test2 = true;
+		}
     }
 	
 	public static void doSomething(){
