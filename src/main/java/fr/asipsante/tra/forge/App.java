@@ -14,6 +14,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
 	public String myvar = "test";
 	private String PASSWORD = "password";
 	private String PASSWORD2 = "password";
+	private String PASSWORD3 = "password";
 	
     public static void main( String[] args )
     {
